@@ -1,0 +1,122 @@
+{
+  "artifacts": [],
+  "command": "visualize_score",
+  "experiment": {
+    "base_dir": "/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/src/aprl/visualize",
+    "dependencies": [
+      "aprl==0.2",
+      "matplotlib==3.4.3",
+      "numpy==1.21.3",
+      "pandas==1.3.4",
+      "sacred==0.8.2",
+      "seaborn==0.11.2"
+    ],
+    "mainfile": "training.py",
+    "name": "visualize_training",
+    "repositories": [
+      {
+        "commit": "bba910b89149f1274bb9652a6f378b22c3c9b6c5",
+        "dirty": true,
+        "url": "https://github.com/HumanCompatibleAI/adversarial-policies.git"
+      },
+      {
+        "commit": "bba910b89149f1274bb9652a6f378b22c3c9b6c5",
+        "dirty": true,
+        "url": "https://github.com/HumanCompatibleAI/adversarial-policies.git"
+      },
+      {
+        "commit": "bba910b89149f1274bb9652a6f378b22c3c9b6c5",
+        "dirty": true,
+        "url": "https://github.com/HumanCompatibleAI/adversarial-policies.git"
+      },
+      {
+        "commit": "bba910b89149f1274bb9652a6f378b22c3c9b6c5",
+        "dirty": true,
+        "url": "https://github.com/HumanCompatibleAI/adversarial-policies.git"
+      },
+      {
+        "commit": "bba910b89149f1274bb9652a6f378b22c3c9b6c5",
+        "dirty": true,
+        "url": "https://github.com/HumanCompatibleAI/adversarial-policies.git"
+      }
+    ],
+    "sources": [
+      [
+        "__init__.py",
+        "_sources/__init___d41d8cd98f00b204e9800998ecf8427e.py"
+      ],
+      [
+        "styles.py",
+        "_sources/styles_93c7a831ed275b565bdb87e6f064642c.py"
+      ],
+      [
+        "tb.py",
+        "_sources/tb_77df0a2a9d8433531e82d57dcb77658b.py"
+      ],
+      [
+        "training.py",
+        "_sources/training_d9a95ad44a6b9e357706e3359bc6f956.py"
+      ],
+      [
+        "util.py",
+        "_sources/util_16ea1811b13ea73e969d120c0e6482e2.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/sacred/config/captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/src/aprl/visualize/training.py\", line 503, in visualize_score\n    baseline = [util.load_datasets(path) for path in score_paths]\n",
+    "  File \"/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/src/aprl/visualize/training.py\", line 503, in <listcomp>\n    baseline = [util.load_datasets(path) for path in score_paths]\n",
+    "  File \"/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/src/aprl/visualize/util.py\", line 172, in load_datasets\n    scores = load_scores(path)\n",
+    "  File \"/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/src/aprl/visualize/util.py\", line 30, in load_scores\n    raw = load_json(path)\n",
+    "  File \"/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/src/aprl/visualize/util.py\", line 25, in load_json\n    with open(path, \"r\") as f:\n",
+    "FileNotFoundError: [Errno 2] No such file or directory: 'data/aws/score_agents/normal/fixed_baseline.json'\n"
+  ],
+  "heartbeat": "2021-11-04T23:50:28.090851",
+  "host": {
+    "ENV": {},
+    "cpu": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+    "hostname": "LAPTOP-NRTIETLL",
+    "os": [
+      "Linux",
+      "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-Ubuntu-20.04-focal"
+    ],
+    "python_version": "3.7.12"
+  },
+  "meta": {
+    "command": "visualize_score",
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "supplementary_config"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2021-11-04T23:50:27.893817",
+  "status": "FAILED",
+  "stop_time": "2021-11-04T23:50:28.108268"
+}

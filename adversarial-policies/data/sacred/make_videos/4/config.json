@@ -1,0 +1,17 @@
+{
+  "adversary_path": "data/sacred/score/7/metrics.json",
+  "exp_name": "default",
+  "multi_score": {},
+  "ray_upload_dir": "data",
+  "root_dir": "data/videos",
+  "score_configs": [
+    [
+      "normal"
+    ],
+    [
+      "normal",
+      "mask_observations_of_victim"
+    ]
+  ],
+  "seed": 8463489
+}

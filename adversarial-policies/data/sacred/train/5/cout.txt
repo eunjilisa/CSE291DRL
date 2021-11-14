@@ -1,0 +1,332 @@
+INFO - train - Running command 'train'
+INFO - train - Started run with ID "5"
+Logging to data/baselines/20211104_164240-default/rl
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Scene XML path: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/world_body_arena.ant_body.ant_body.xml
+Created Scene with agents
+2021-11-04 16:46:04.381995: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-11-04 16:46:04.614356: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2803210000 Hz
+2021-11-04 16:46:04.630081: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x56316c17de50 executing computations on platform Host. Devices:
+2021-11-04 16:46:04.630131: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+INFO - aprl.envs.gym_compete - Loaded zoo parameters from 'agent_zoo/SumoAnts-v0/agent_parameters-v1.pkl'
+WARNING:tensorflow:From /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING - tensorflow - From /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/policy.py:39: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING - tensorflow - From /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/policy.py:39: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/policy.py:191: BasicLSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+WARNING - tensorflow - From /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/policy.py:191: BasicLSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/stable_baselines/common/policies.py:561: flatten (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.flatten instead.
+WARNING - tensorflow - From /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/stable_baselines/common/policies.py:561: flatten (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.flatten instead.
+WARNING:tensorflow:From /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING - tensorflow - From /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+------------------------------------------
+| approxkl               | 0.00039124448 |
+| clipfrac               | 0.00036621094 |
+| ep_len_mean            | 157           |
+| ep_reward_mean         | -590          |
+| explained_variance     | -0.346        |
+| fps                    | 453           |
+| game_tie               | 0.167         |
+| game_total             | 6             |
+| game_win0              | 0.833         |
+| game_win1              | 0             |
+| n_updates              | 1             |
+| policy_entropy         | 11.347184     |
+| policy_loss            | -0.0072876634 |
+| serial_timesteps       | 256           |
+| shaping/epdensemean    | 41            |
+| shaping/eprewmean_true | 15.5          |
+| shaping/epsparsemean   | -10           |
+| shaping/rew_anneal_c   | 0.5           |
+| time_elapsed           | 3e-05         |
+| total_timesteps        | 2048          |
+| value_loss             | 0.995373      |
+------------------------------------------
+------------------------------------------
+| approxkl               | 0.00017104839 |
+| clipfrac               | 0.0           |
+| ep_len_mean            | 198           |
+| ep_reward_mean         | -430          |
+| explained_variance     | -0.375        |
+| fps                    | 557           |
+| game_tie               | 0.125         |
+| game_total             | 8             |
+| game_win0              | 0.875         |
+| game_win1              | 0             |
+| n_updates              | 2             |
+| policy_entropy         | 11.342943     |
+| policy_loss            | -0.0036247822 |
+| serial_timesteps       | 512           |
+| shaping/epdensemean    | 69.1          |
+| shaping/eprewmean_true | 29.5          |
+| shaping/epsparsemean   | -10           |
+| shaping/rew_anneal_c   | 0.5           |
+| time_elapsed           | 4.52          |
+| total_timesteps        | 4096          |
+| value_loss             | 0.17847076    |
+------------------------------------------
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Scene XML path: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/world_body_arena.ant_body.ant_body.xml
+Created Scene with agents
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Scene XML path: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/world_body_arena.ant_body.ant_body.xml
+Created Scene with agents
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Scene XML path: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/world_body_arena.ant_body.ant_body.xml
+Created Scene with agents
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Scene XML path: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/world_body_arena.ant_body.ant_body.xml
+Created Scene with agents
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Scene XML path: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/world_body_arena.ant_body.ant_body.xml
+Created Scene with agents
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Scene XML path: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/world_body_arena.ant_body.ant_body.xml
+Created Scene with agents
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Scene XML path: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/world_body_arena.ant_body.ant_body.xml
+Created Scene with agents
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Creating agent ant_fighter
+Reading agent XML from: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/ant_body.xml
+Scene XML path: /mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/world_body_arena.ant_body.ant_body.xml
+Created Scene with agents
+INFO - train - Result: data/baselines/20211104_164240-default/final_model
+INFO - train - Completed after 0:03:37
