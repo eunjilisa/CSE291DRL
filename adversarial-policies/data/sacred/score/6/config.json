@@ -1,7 +1,7 @@
 {
   "agent_a_path": "1",
   "agent_a_type": "zoo",
-  "agent_b_path": "data/baselines/20211112_204538-default/checkpoint/000000655360",
+  "agent_b_path": "/home/charleslu/adversarial-policies/data/baselines/20211114_013102-default/final_model/",
   "agent_b_type": "ppo2",
   "env_name": "multicomp/SumoHumans-v0",
   "episodes": 20,
@@ -25,11 +25,11 @@
     "annotated": true,
     "annotation_params": {
       "camera_config": "default",
-      "font": "times",
+      "font": "/mnt/c/Windows/Fonts/times",
       "font_size": 70,
       "resolution": [
-        1920,
-        1080
+        960,
+        540
       ],
       "short_labels": false
     },

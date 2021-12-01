@@ -1,10 +1,11 @@
 {
+  "__doc__": "Same hyperparameters as ICLR 2020 paper.",
   "adv_noise_params": {
     "base_path": null,
     "base_type": null,
     "noise_val": null
   },
-  "batch_size": 2048,
+  "batch_size": 16384,
   "checkpoint_interval": 131072,
   "debug": false,
   "embed_index": 0,
@@ -17,7 +18,7 @@
   "embed_paths": null,
   "embed_type": null,
   "embed_types": null,
-  "env_name": "multicomp/SumoAnts-v0",
+  "env_name": "multicomp/SumoHumans-v0",
   "exp_name": "default",
   "expert_dataset_path": null,
   "learning_rate": 0.0003,
@@ -43,6 +44,7 @@
   "policy": "MlpPolicy",
   "rew_shape": true,
   "rew_shape_params": {
+    "anneal_frac": 0.0,
     "weights": {
       "dense": {
         "reward_move": 0.1
@@ -53,9 +55,13 @@
     }
   },
   "rl_algo": "ppo2",
-  "rl_args": {},
+  "rl_args": {
+    "ent_coef": 0.0,
+    "nminibatches": 4,
+    "noptepochs": 4
+  },
   "root_dir": "data/baselines",
   "seed": 0,
-  "total_timesteps": 3,
+  "total_timesteps": 20000000,
   "transparent_params": null
 }

@@ -165,7 +165,7 @@ def default_score_config():
         "annotation_params": {
             "camera_config": "default",
             "short_labels": False,
-            "resolution": (1920, 1080),
+            "resolution": (960, 540),
             "font_size": 70,
             "font": "/mnt/c/Windows/Fonts/times",
         },
@@ -208,7 +208,6 @@ def score_agent(
     mask_agent_noise,
 ):
     save_dir = video_params["save_dir"]
-    print(save_dir)
     if videos:
         if save_dir is None:
             score_ex_logger.info(

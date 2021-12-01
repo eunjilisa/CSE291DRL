@@ -2,7 +2,7 @@
   "artifacts": [],
   "command": "score_agent",
   "experiment": {
-    "base_dir": "/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/src/aprl",
+    "base_dir": "/home/charleslu/adversarial-policies/src/aprl",
     "dependencies": [
       "numpy==1.21.3",
       "sacred==0.8.2"
@@ -92,43 +92,43 @@
       ],
       [
         "common/utils.py",
-        "_sources/utils_8e9ad5be6982810a8ed89e3e2b99e765.py"
+        "_sources/utils_f89dc4432b750b0e33f0765ad76a128b.py"
       ],
       [
         "envs/__init__.py",
-        "_sources/__init___d82c10de489e949b6fd9a615c47bb1b3.py"
+        "_sources/__init___16cbb2d6c07d5873ccc7b9395c972cce.py"
       ],
       [
         "envs/gym_compete.py",
-        "_sources/gym_compete_390b609bccd23afcff3e0120981d0aeb.py"
+        "_sources/gym_compete_bc3afffb47e66e66b48474617ea54482.py"
       ],
       [
         "envs/multi_agent.py",
-        "_sources/multi_agent_a2e147bf1358443fffc7dce90202b5cc.py"
+        "_sources/multi_agent_2ec3395fb4d3287899d4a751820a49cc.py"
       ],
       [
         "envs/observation_masking.py",
-        "_sources/observation_masking_174b80ba4e5d8bb2179276e9b71977ab.py"
+        "_sources/observation_masking_e8a3081e806023847e55f498248fc601.py"
       ],
       [
         "envs/wrappers.py",
-        "_sources/wrappers_19734e516b103883f78988345c379c2f.py"
+        "_sources/wrappers_260ebb344a08d9657ce44e9d1a0c1f31.py"
       ],
       [
         "policies/__init__.py",
-        "_sources/__init___64192e690b0475cf5d922d621eb17a03.py"
+        "_sources/__init___5a17d97d523e24cfbdb9a2ce9b0ad4ec.py"
       ],
       [
         "policies/loader.py",
-        "_sources/loader_6e9f37bf89471db8820240e12fde88aa.py"
+        "_sources/loader_d89a151e79c650b5595c054fd8fa91dd.py"
       ],
       [
         "policies/wrappers.py",
-        "_sources/wrappers_f74362c9d3d8d633aedd86c70295225a.py"
+        "_sources/wrappers_4b681ab1adc5627710e8e442ee0b5df1.py"
       ],
       [
         "score_agent.py",
-        "_sources/score_agent_cbe397507d75ec7c0cc7bc5d761304dd.py"
+        "_sources/score_agent_ffce0415973024d52865974a3b944cc4.py"
       ],
       [
         "visualize/__init__.py",
@@ -136,18 +136,28 @@
       ],
       [
         "visualize/annotated_gym_compete.py",
-        "_sources/annotated_gym_compete_bf0b20c76351b69abf2863ba91d4cb26.py"
+        "_sources/annotated_gym_compete_075da8c30b3e2cbc860b59e99b61b079.py"
       ]
     ]
   },
-  "heartbeat": "2021-11-13T09:40:48.018281",
+  "heartbeat": "2021-11-14T20:30:34.898949",
   "host": {
     "ENV": {},
-    "cpu": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
-    "hostname": "LAPTOP-NRTIETLL",
+    "cpu": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+    "gpus": {
+      "driver_version": "471.35",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 2060 with Max-Q Design",
+          "persistence_mode": false,
+          "total_memory": 6144
+        }
+      ]
+    },
+    "hostname": "DESKTOP-D60JE0C",
     "os": [
       "Linux",
-      "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-Ubuntu-20.04-focal"
+      "Linux-5.10.60.1-microsoft-standard-WSL2-x86_64-with-Ubuntu-20.04-focal"
     ],
     "python_version": "3.7.12"
   },
@@ -178,7 +188,7 @@
         "env_name=multicomp/SumoHumans-v0",
         "render=False",
         "agent_b_type=ppo2",
-        "agent_b_path=data/baselines/20211112_204538-default/checkpoint/000000131072"
+        "agent_b_path=/home/charleslu/adversarial-policies/data/baselines/20211114_013102-default/final_model/"
       ],
       "help": false,
       "with": true
@@ -186,11 +196,11 @@
   },
   "resources": [],
   "result": {
-    "ties": 18,
-    "win0": 2,
+    "ties": 20,
+    "win0": 0,
     "win1": 0
   },
-  "start_time": "2021-11-13T09:40:38.964825",
+  "start_time": "2021-11-14T20:30:19.109018",
   "status": "COMPLETED",
-  "stop_time": "2021-11-13T09:40:48.016400"
+  "stop_time": "2021-11-14T20:30:34.896861"
 }

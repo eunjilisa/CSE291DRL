@@ -2,7 +2,7 @@
   "artifacts": [],
   "command": "train",
   "experiment": {
-    "base_dir": "/mnt/c/Users/songe/Documents/GitHub/CSE291-5/adversarial-policies/src/aprl",
+    "base_dir": "/home/charleslu/adversarial-policies/src/aprl",
     "dependencies": [
       "gym==0.15.4",
       "numpy==1.21.3",
@@ -110,39 +110,39 @@
       ],
       [
         "common/utils.py",
-        "_sources/utils_8e9ad5be6982810a8ed89e3e2b99e765.py"
+        "_sources/utils_f89dc4432b750b0e33f0765ad76a128b.py"
       ],
       [
         "envs/__init__.py",
-        "_sources/__init___d82c10de489e949b6fd9a615c47bb1b3.py"
+        "_sources/__init___16cbb2d6c07d5873ccc7b9395c972cce.py"
       ],
       [
         "envs/gym_compete.py",
-        "_sources/gym_compete_390b609bccd23afcff3e0120981d0aeb.py"
+        "_sources/gym_compete_bc3afffb47e66e66b48474617ea54482.py"
       ],
       [
         "envs/multi_agent.py",
-        "_sources/multi_agent_a2e147bf1358443fffc7dce90202b5cc.py"
+        "_sources/multi_agent_2ec3395fb4d3287899d4a751820a49cc.py"
       ],
       [
         "envs/observation_masking.py",
-        "_sources/observation_masking_174b80ba4e5d8bb2179276e9b71977ab.py"
+        "_sources/observation_masking_e8a3081e806023847e55f498248fc601.py"
       ],
       [
         "policies/__init__.py",
-        "_sources/__init___64192e690b0475cf5d922d621eb17a03.py"
+        "_sources/__init___5a17d97d523e24cfbdb9a2ce9b0ad4ec.py"
       ],
       [
         "policies/loader.py",
-        "_sources/loader_6e9f37bf89471db8820240e12fde88aa.py"
+        "_sources/loader_d89a151e79c650b5595c054fd8fa91dd.py"
       ],
       [
         "policies/wrappers.py",
-        "_sources/wrappers_f74362c9d3d8d633aedd86c70295225a.py"
+        "_sources/wrappers_4b681ab1adc5627710e8e442ee0b5df1.py"
       ],
       [
         "train.py",
-        "_sources/train_02dda3fc2d7c994e3a856fd03a14f935.py"
+        "_sources/train_bf73635bc8bcf1cb55c948965747fa19.py"
       ],
       [
         "training/__init__.py",
@@ -150,34 +150,44 @@
       ],
       [
         "training/embedded_agents.py",
-        "_sources/embedded_agents_638fba59bfdaf79ad4187d99a7b29a82.py"
+        "_sources/embedded_agents_3be226932c1d7ca3b7a08cd676d44b4e.py"
       ],
       [
         "training/logger.py",
-        "_sources/logger_420152497554e2e6c439b3ab71d42320.py"
+        "_sources/logger_ce6acc0481e93723eefc00bc82b53b10.py"
       ],
       [
         "training/lookback.py",
-        "_sources/lookback_4e62fc942a0de7c6ccd863212a3fd945.py"
+        "_sources/lookback_9d154cb28b3faf1d2209e28cc16320c8.py"
       ],
       [
         "training/scheduling.py",
-        "_sources/scheduling_6f365b611a86780143dc9ea188833230.py"
+        "_sources/scheduling_22f1baa796047ff4948ee273e577be20.py"
       ],
       [
         "training/shaping_wrappers.py",
-        "_sources/shaping_wrappers_72b3bf37e175ca22b9fd7d52905553ef.py"
+        "_sources/shaping_wrappers_d68fff7ed8d4676079813924d1764735.py"
       ]
     ]
   },
-  "heartbeat": "2021-10-27T23:33:48.419622",
+  "heartbeat": "2021-12-01T08:13:16.549050",
   "host": {
     "ENV": {},
-    "cpu": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
-    "hostname": "LAPTOP-NRTIETLL",
+    "cpu": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+    "gpus": {
+      "driver_version": "471.35",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 2060 with Max-Q Design",
+          "persistence_mode": false,
+          "total_memory": 6144
+        }
+      ]
+    },
+    "hostname": "DESKTOP-D60JE0C",
     "os": [
       "Linux",
-      "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-Ubuntu-20.04-focal"
+      "Linux-5.10.60.1-microsoft-standard-WSL2-x86_64-with-Ubuntu-20.04-focal"
     ],
     "python_version": "3.7.12"
   },
@@ -204,14 +214,17 @@
       "--tiny_db": null,
       "--unobserved": false,
       "COMMAND": null,
-      "UPDATE": [],
+      "UPDATE": [
+        "env_name=multicomp/YouShallNotPassHumans-v0",
+        "paper"
+      ],
       "help": false,
-      "with": false
+      "with": true
     }
   },
   "resources": [],
-  "result": "data/baselines/20211027_162744-default/final_model",
-  "start_time": "2021-10-27T23:27:43.375194",
+  "result": "data/baselines/20211130_174424-default/final_model",
+  "start_time": "2021-12-01T01:44:24.914397",
   "status": "COMPLETED",
-  "stop_time": "2021-10-27T23:33:46.400370"
+  "stop_time": "2021-12-01T08:13:14.528432"
 }
