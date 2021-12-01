@@ -1,5 +1,7 @@
 # Data files
-data
+data/aws
+data/temp
+*.pkl
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

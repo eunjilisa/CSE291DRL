@@ -1,0 +1,50 @@
+{
+  "col_ends": [
+    "multicomp/SumoHumansAutoContact-v0",
+    "multicomp/SumoAntsAutoContact-v0"
+  ],
+  "command": {
+    "py/function": "__main__.heatmap_opponent"
+  },
+  "fig_dir": "/home/charleslu/dev/adversarial-policies-paper/figs/scores_single",
+  "palette": "Blues",
+  "publication": true,
+  "row_ends": [
+    "multicomp/YouShallNotPassHumans-v0",
+    "multicomp/SumoAntsAutoContact-v0"
+  ],
+  "row_starts": [
+    "multicomp/KickAndDefend-v0",
+    "multicomp/SumoHumansAutoContact-v0"
+  ],
+  "score_paths": [
+    {
+      "path": "normal/2019-05-05T18:12:24+00:00/adversary_transfer.json"
+    },
+    {
+      "path": "normal/fixed_baseline.json"
+    },
+    {
+      "path": "normal/zoo_baseline.json"
+    },
+    {
+      "path": "victim_masked_init/2019-05-05T18:12:24+00:00/adversary_transfer.json",
+      "victim_suffix": "M"
+    },
+    {
+      "path": "victim_masked_init/fixed_baseline.json",
+      "victim_suffix": "M"
+    },
+    {
+      "path": "victim_masked_init/zoo_baseline.json",
+      "victim_suffix": "M"
+    }
+  ],
+  "score_root": "data/aws/score_agents",
+  "seed": 0,
+  "styles": [
+    "paper",
+    "scores",
+    "scores_twocol"
+  ]
+}

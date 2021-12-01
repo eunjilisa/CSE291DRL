@@ -1,0 +1,40 @@
+INFO - score - Running command 'score_agent'
+INFO - score - Started run with ID "23"
+Creating agent humanoid_blocker
+Reading agent XML from: /home/charleslu/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/humanoid_body.xml
+Creating agent humanoid
+Reading agent XML from: /home/charleslu/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/humanoid_body.xml
+Scene XML path: /home/charleslu/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/new_envs/assets/world_body.humanoid_body.humanoid_body.xml
+Created Scene with agents
+INFO - aprl.policy_loader - Loading Stable Baselines policy for '<class 'stable_baselines.ppo2.ppo2.PPO2'>' from '/home/charleslu/adversarial-policies/data/aws/multi_train/paper/20190429_011349/train_rl-7086bd7945d8a380b53e797f3932c739_54_env_name:victim_path=['multicomp_YouShallNotPassHumans-v0', 1],seed=4,victim_index=1_2019-04-29_01-13-50rtkd5uxh/data/baselines/20190429_011402-default-env_name=multicomp_YouShallNotPassHumans-v0-victim_path=1-seed=4-victim_index=1/final_model/'
+/home/charleslu/adversarial-policies/venv/lib/python3.7/site-packages/cloudpickle/cloudpickle.py:821: UserWarning: A pickle file created using an old (<=1.4.1) version of cloudpickle is currently being loaded. This is not supported by cloudpickle and will break in cloudpickle 1.7
+  "will break in cloudpickle 1.7", category=UserWarning
+WARNING:tensorflow:From /home/charleslu/adversarial-policies/venv/lib/python3.7/site-packages/stable_baselines/common/policies.py:561: flatten (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.flatten instead.
+WARNING - tensorflow - From /home/charleslu/adversarial-policies/venv/lib/python3.7/site-packages/stable_baselines/common/policies.py:561: flatten (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.flatten instead.
+WARNING:tensorflow:From /home/charleslu/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING - tensorflow - From /home/charleslu/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/charleslu/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING - tensorflow - From /home/charleslu/adversarial-policies/venv/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO - aprl.policy_loader - Loaded normalization statistics from '/home/charleslu/adversarial-policies/data/aws/multi_train/paper/20190429_011349/train_rl-7086bd7945d8a380b53e797f3932c739_54_env_name:victim_path=['multicomp_YouShallNotPassHumans-v0', 1],seed=4,victim_index=1_2019-04-29_01-13-50rtkd5uxh/data/baselines/20190429_011402-default-env_name=multicomp_YouShallNotPassHumans-v0-victim_path=1-seed=4-victim_index=1/final_model/'
+INFO - aprl.envs.gym_compete - Loaded zoo parameters from 'agent_zoo/YouShallNotPassHumans-v0/agent2_parameters-v1.pkl'
+WARNING:tensorflow:From /home/charleslu/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/policy.py:39: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING - tensorflow - From /home/charleslu/adversarial-policies/venv/lib/python3.7/site-packages/gym_compete/policy.py:39: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO - mujoco_py_131.mjviewer - initializing glfw@(3, 1, 2)
+ERROR - mujoco_py_131.mjviewer - GLFW error: 65544, desc: b'Linux: Failed to watch for joystick connections in /dev/input: No such file or directory'
+ERROR - mujoco_py_131.mjviewer - GLFW error: 65544, desc: b'Linux: Failed to open joystick device directory /dev/input: No such file or directory'
