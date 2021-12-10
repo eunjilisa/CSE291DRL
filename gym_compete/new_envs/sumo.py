@@ -86,10 +86,11 @@ class SumoEnv(MultiAgentEnv):
 
         agent_contacts = self.get_agent_contacts()
         if len(agent_contacts) > 0:
+            done = True
             # print('Detected contacts:', agent_contacts)
             self.agent_contacts = True
             for j in range(self.num_agents):
-                goal_rews[j] -= 100
+                goal_rews[j] -= self.GOAL_REWARD
         
         for j in range(self.num_agents):
             movement = self.get_agent_movement(j)
