@@ -104,7 +104,7 @@ class SumoEnv(MultiAgentEnv):
                     goal_rews[j] += 2 * self.GOAL_REWARD
                     infos[j]['winner'] = True
                 else:
-                    goal_rews[j] += 2 * self.GOAL_REWARD
+                    goal_rews[j] += self.GOAL_REWARD
                     infos[j]['winner'] = True
             # import ipdb; ipdb.set_trace()
         elif any(past_arena):
@@ -116,7 +116,7 @@ class SumoEnv(MultiAgentEnv):
                     goal_rews[j] += 2 * self.GOAL_REWARD
                     infos[j]['winner'] = True
                 else:
-                    goal_rews[j] += 2 * self.GOAL_REWARD
+                    goal_rews[j] += self.GOAL_REWARD
                     infos[j]['winner'] = True
         elif timeup:
             for j in range(self.num_agents):
