@@ -86,7 +86,7 @@ COPY ./ci/build_venv.sh /adversarial-policies/ci/build_venv.sh
 # mjkey.txt needs to exist for build, but doesn't need to be a real key
 RUN    touch /root/.mujoco/mjkey.txt && ci/build_venv.sh /venv && rm -rf $HOME/.cache/pip
 
-# full stage contains everything.
+# full stage contains everything. 
 # Can be used for deployment and local testing.
 FROM python-req as full
 
