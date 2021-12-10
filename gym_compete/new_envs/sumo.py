@@ -91,17 +91,20 @@ class SumoEnv(MultiAgentEnv):
             for j in range(self.num_agents):
                 goal_rews[j] -= 250
         
-        for j in range(self.num_agents):
-            movement = self.get_agent_movement(j)
-            goal_rews[j] -= movement * 500
+        # for j in range(self.num_agents):
+        #     movement = self.get_agent_movement(j)
+        #     goal_rews[j] -= movement * 500
 
         if any(fallen):
             done = True
             for j in range(self.num_agents):
                 if fallen[j]:
                     goal_rews[j] -= self.GOAL_REWARD
+                elif not self.agent_contacts:
+                    goal_rews[j] += 2 * self.GOAL_REWARD
+                    infos[j]['winner'] = True
                 else:
-                    goal_rews[j] += self.GOAL_REWARD
+                    goal_rews[j] += 2 * self.GOAL_REWARD
                     infos[j]['winner'] = True
             # import ipdb; ipdb.set_trace()
         elif any(past_arena):
@@ -109,8 +112,11 @@ class SumoEnv(MultiAgentEnv):
             for j in range(self.num_agents):
                 if past_arena[j]:
                     goal_rews[j] -= self.GOAL_REWARD
+                elif not self.agent_contacts:
+                    goal_rews[j] += 2 * self.GOAL_REWARD
+                    infos[j]['winner'] = True
                 else:
-                    goal_rews[j] += self.GOAL_REWARD
+                    goal_rews[j] += 2 * self.GOAL_REWARD
                     infos[j]['winner'] = True
         elif timeup:
             for j in range(self.num_agents):
