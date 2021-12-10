@@ -1,1 +1,0 @@
-gym_compete @ git+https://github.com/Charles-Lu/multiagent-competition.git
