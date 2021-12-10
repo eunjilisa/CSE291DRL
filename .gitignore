@@ -1,6 +1,5 @@
 # Data files
-data/aws
-data/temp
+data
 **/sacred
 
 # Byte-compiled / optimized / DLL files
