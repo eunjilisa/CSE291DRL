@@ -23,6 +23,7 @@ class SumoEnv(MultiAgentEnv):
         self._set_geom_radius()
         self.agent_contacts = False
         self.positions = [None] * self.num_agents
+        self.heights = [None] * self.num_agents
 
     def _past_limit(self):
         if self._max_episode_steps <= self._elapsed_steps:
@@ -45,6 +46,9 @@ class SumoEnv(MultiAgentEnv):
         movement = np.sum((xy - xy_old) ** 2) ** 0.5
         self.positions[agent_id] = xy
         return movement
+
+    def get_agent_height(self, agent_id):
+        return self.agents[agent_id].get_qpos()[2]
 
     def _is_fallen(self, agent_id, limit=0.5):
         if self.agents[agent_id].team == 'ant':
@@ -88,12 +92,20 @@ class SumoEnv(MultiAgentEnv):
         if len(agent_contacts) > 0:
             # print('Detected contacts:', agent_contacts)
             self.agent_contacts = True
+            done = True
             for j in range(self.num_agents):
-                goal_rews[j] -= 100
+                goal_rews[j] -= self.GOAL_REWARD
         
         for j in range(self.num_agents):
-            movement = self.get_agent_movement(j)
-            goal_rews[j] -= movement * 250
+            height = self.get_agent_height(j)
+            if self.heights[j] is None:
+                self.heights[j] = height
+            else:
+                delta = self.heights[j] - height
+                for k in range(self.num_agents):
+                    if k != j:
+                        goal_rews[k] += delta * 250
+                self.heights[j] = height
 
         if any(fallen):
             done = True
