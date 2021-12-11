@@ -1,7 +1,7 @@
 # UCSD FA21 CSE291(5) Deep RL Course Project
 
 The code is based on [Adversarial Policies: Attacking Deep Reinforcement Learning](https://arxiv.org/abs/1905.10615) and [adversarial-policies](https://github.com/HumanCompatibleAI/adversarial-policies).
-An off-the-shelf development environment has been build at docker image xuanchenlu/cse291:latest
+An off-the-shelf development environment has been built at docker image xuanchenlu/cse291:latest
 
 To reproduce the results:
 1. Setup the docker image on DSMLP 
